@@ -19,24 +19,24 @@
 ```
 
 ## 使用出来る機能
-- openSerialPort()
-- closeSerialPort()
-- writeFlashRom()
-- setReboot()
-- initFactorySetting()
-- setId()
-- setBaudrate()
-- setAngleLimit()
-- setReturnDelay()
-- setReverse()
-- setTorque()
-- setCompliance()
-- setPID()
-- setMaxTorque()
-- setMove()
-- setTempLimit()
-- setTorque_multi()
-- setMove_multi()
+- openSerialPort() シリアルポートを開く
+- closeSerialPort()　シリアルポートを閉じる
+- writeFlashRom()　フラッシュロム領域に書き込む
+- setReboot()　サーボを再起動する
+- initFactorySetting()　サーボを工場出荷時状態に初期化する
+- setId()　サーボIDを設定する
+- setBaudrate()　サーボの通信速度を設定する
+- setAngleLimit()　サーボのリミット角度を設定する
+- setReturnDelay()　サーボのリターンディレイ時間を設定する
+- setReverse()　サーボのリバース値を設定する
+- setTorque()　サーボのトルクのon/offを設定する
+- setCompliance()　サーボのコンプライアンス値などを設定する
+- setPID()　サーボのPID値を設定する
+- setMaxTorque()　サーボのmaxトルクを設定する
+- setMove()　サーボの目標位置・時間を設定して、動かす
+- setTempLimit()　サーボの温度リミットを設定する
+- setTorque_multi()　複数のサーボのトルクon/offを一括で設定する
+- setMove_multi()　複数のサーボの目標位置・時間を一括で設定して、動かす
 
 ## RaspberryPiとサーボの接続
 - 4番 (5V)       : RSサーボのVCCに接続（真ん中の線）
