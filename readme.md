@@ -1,12 +1,12 @@
 # pyfrs()
 ## Python Futaba RS servo ttl control For Raspberry Pi
 ----------------------------------------------------
-Fuatabaのシリアルコマンドサーボ RS204MD他 を RaspberryPiから簡単に扱うクラス
-    ※確認済：RS204MD、RS306MD / TTL通信
+### Fuatabaのシリアルコマンドサーボ RS204MD他 を RaspberryPiから簡単に扱うクラス
+- ※確認済：RS204MD、RS306MD / TTL通信
 ----------------------------------------------------
 ## 簡単な使い方例 sample
     以下のプログラムで接続、右端まで回転、左端まで回転、真ん中に戻して、終了です。
-'''
+```
     frs = pyfrs()               #インスタンス生成
     frs.openSerialPort()        #シリアルポートを開く
     frs.setTorque(1,1)          #サーボ１をトルクON/ドール
@@ -17,7 +17,7 @@ Fuatabaのシリアルコマンドサーボ RS204MD他 を RaspberryPiから簡�
     frs.setMove(1,0,60)         #サーボ１を、0.0度まで0.6秒で回転
     time.sleep(1)               #wait
     frs.closeSerialPort()       #シリアルポートをクローズ
-'''
+```
 
 ## 使用出来る機能
 - openSerialPort()
